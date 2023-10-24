@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="11dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="1"
+            android:columnCount="3"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/buttonPrev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PREV"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:textSize="20sp"
+                android:layout_columnWeight="1"
+                android:background="@color/purple_200">
+            </Button>
+
+            <TextView
+                android:id="@+id/textDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day of week"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:textSize="20sp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center">
+            </TextView>
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:text="NEXT"
+                android:textSize="20sp"
+                android:layout_columnWeight="1"
+                android:background="@color/purple_200">
+            </Button>
+
+        </GridLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/purple_200"
+            app:cardCornerRadius="11dp"
+            app:cardElevation="11dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:text="Hour intervals"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:text="Class"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:text="Room"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="11dp"
+                        android:textStyle="bold"
+                        android:text="8-10"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/nameEight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginRight="11dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="80dp"
+                        android:text="Class name"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/locationEight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="11dp"
+                        android:text="Class location"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="11dp"
+                        android:textStyle="bold"
+                        android:text="10-12"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/nameTen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginRight="11dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="70dp"
+                        android:text="Class name"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/locationTen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="11dp"
+                        android:text="Class location"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="11dp"
+                        android:textStyle="bold"
+                        android:text="12-14"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/nameTwelve"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginRight="11dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="70dp"
+                        android:text="Class name"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/locationTwelve"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="11dp"
+                        android:text="Class location"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="11dp"
+                        android:textStyle="bold"
+                        android:text="14-16"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/nameTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginRight="11dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="70dp"
+                        android:text="Class name"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/locationTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="11dp"
+                        android:text="Class location"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="11dp"
+                        android:textStyle="bold"
+                        android:text="16-18"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/nameFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginRight="11dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="70dp"
+                        android:text="Class name"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/locationFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="11dp"
+                        android:text="Class location"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="11dp"
+                        android:textStyle="bold"
+                        android:text="18-20"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/nameSix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginRight="11dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="70dp"
+                        android:text="Class name"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/locationSix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="11dp"
+                        android:text="Class location"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="11dp"
+                        android:textStyle="bold"
+                        android:text="20-22"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/nameEightPM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginRight="11dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="70dp"
+                        android:text="Class name"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/locationEightPM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="11dp"
+                        android:text="Class location"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit schedule for the day"
+            android:background="#FC86E8">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
